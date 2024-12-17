@@ -24,12 +24,7 @@ fetch('https://api.ipify.org?format=json')
       }   
 
       request.send(JSON.stringify(params));
-      alert(data.ip)
   });
-    
-
-console.log("Hello AA")
-
 
 let containerArray = [
     {
